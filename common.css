@@ -22,15 +22,25 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 .navi-right-wrapper{right: 32px; position: fixed;}
 .navi-right-menu,.navi-logo-menu{padding: 10px;}
 .navi-right-menu:nth-child(1),.e {cursor: not-allowed;}
-@media(min-width:360px){
-    .navi-right-menu{font-size: 60px;}
+
+@media (pointer:coarse) {
+    /* custom css for "touch targets" */
+    .navi-right-menu{
+        font-size: 60px;
+    }
 }
 
-@media(min-width:768px){
+@media (min-width: 360px) {
+    .navi-right-menu{
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 768px) {
     .navi-right-menu{font-size: 20px;}
 }
 
-@media(min-width:1300px){
+@media (min-width: 1300px) {
     .navi-right-menu{font-size: 20px;}
 }
 
