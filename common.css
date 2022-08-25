@@ -18,30 +18,27 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 
 /* header */
 .navi{padding: 20px; position: absolute;}
-.navi-logo-wrapper{left:32px; position: fixed;}
-.navi-right-wrapper{right: 32px; position: fixed;}
+.navi-logo-wrapper{position: fixed;}
+.navi-right-wrapper{position: fixed;}
 .navi-right-menu,.navi-logo-menu{padding: 10px;}
 .navi-right-menu:nth-child(1),.e {cursor: not-allowed;}
 
-@media (pointer:coarse) {
-    /* custom css for "touch targets" */
-    .navi-right-menu{
-        font-size: 60px;
-    }
-}
-
 @media (min-width: 360px) {
-    .navi-right-menu{
-        font-size: 60px;
-    }
+    .navi-logo-menu{font-size: 20px;}
+    .navi-right-menu{font-size: 20px;}
+    .navi-logo-wrapper{left:20px;}
+    .navi-right-wrapper{right: 20px;}
 }
 
 @media (min-width: 768px) {
-    .navi-right-menu{font-size: 20px;}
+    .navi-logo-menu{font-size: 16px;}
+    .navi-right-menu{font-size: 16px;}
+    .navi-logo-wrapper{left:32px;}
+    .navi-right-wrapper{right: 32px;}
 }
 
 @media (min-width: 1300px) {
-    .navi-right-menu{font-size: 20px;}
+    .navi-right-menu{font-size: 16px;}
 }
 
 /* image */
