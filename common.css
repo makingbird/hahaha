@@ -13,8 +13,8 @@ a:hover, a:active { text-decoration: none; }
 li {list-style: none;}
 
 /* 마우스 커서 변경 */
-body, html {cursor: url(Vector\ 1.png), url(myBall.cur), auto}
-a {cursor: url(Vector\ 1.png), url(myBall.cur), auto}
+body, html {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
+a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 
 /* header */
 .navi{padding: 20px; position: absolute;}
