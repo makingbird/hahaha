@@ -1,0 +1,64 @@
+/* CSS RESET */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', 'Noto Sans KR', sans-serif;
+}
+a { text-decoration: none; color: black; }    
+a:visited { text-decoration: none; }    
+a:hover { text-decoration: none; }    
+a:focus { text-decoration: none; }    
+a:hover, a:active { text-decoration: none; }
+li {list-style: none;}
+
+/* 마우스 커서 변경 */
+body, html {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
+a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
+
+/* header */
+.navi{padding: 20px; position: absolute;}
+.navi-logo-wrapper{position: fixed;}
+.navi-right-wrapper{position: fixed;}
+.navi-right-menu,.navi-logo-menu{padding: 10px;}
+.navi-right-menu:nth-child(1),.e {cursor: not-allowed;}
+
+@media (min-width: 360px) {
+    .navi-logo-menu{font-size: 20px;}
+    .navi-right-menu{font-size: 20px;}
+    .navi-logo-wrapper{left:20px;}
+    .navi-right-wrapper{right: 20px;}
+}
+
+@media (min-width: 768px) {
+    .navi-logo-menu{font-size: 16px;}
+    .navi-right-menu{font-size: 16px;}
+    .navi-logo-wrapper{left:32px;}
+    .navi-right-wrapper{right: 32px;}
+}
+
+@media (min-width: 1300px) {
+    .navi-right-menu{font-size: 16px;}
+}
+
+.html,body { height: 100%;}
+
+/* image */
+.thumbnail{
+    /* clear: both;  flot 사용하면 꼭 적용 */   
+    padding-top: 400px;
+    
+}
+/* 가로 스크롤 적용 */
+.thumbnail-content-wrapper{
+    overflow-x:auto; /* 안쓰면 다른 영역도 같이 움직임 */
+    white-space:nowrap; /* 사진 가로로 넘치게 */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+.thumbnail-content-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.thumbnail-content-img {
+    display:inline-block; width:300px; height:150px;
+}
