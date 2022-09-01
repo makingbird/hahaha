@@ -3,7 +3,7 @@
     padding: 0;
     border: 0;
     margin: 0;
-    font-family: 'Roboto Mono', 'Noto Sans KR', sans-serif;
+    font-family: 'Apple SD Gothic Neo', 'Roboto Mono', sans-serif;
  }
  a { text-decoration: none; color: black; }    
  a:visited { text-decoration: none; }    
@@ -11,36 +11,37 @@
  a:focus { text-decoration: none; }    
  a:hover, a:active { text-decoration: none; }
  li {list-style: none;}
- 
+ img {vertical-align: bottom;} /* 이미지 공백 x */
+
 
  /* 마우스 커서 변경 */
  body, html {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
  a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
- 
+
 
  /* header */
  .navi{padding: 20px; position: absolute;}
  .navi-logo-wrapper,.navi-right-wrapper,.navi-bottom-wrapper{position: fixed;}
- .navi-right-menu,.navi-logo-menu,.navi-bottom-menu{padding: 10px;}
+ .navi-right-menu,.navi-logo-menu,.navi-bottom-menu{padding: 8px;}
  .navi-right-menu:nth-child(1),.e {cursor: not-allowed;}
  
  @media (min-width: 360px) {
-    .navi{font-size: 20px;}
+    .navi{font-size: 14px;}
     .navi-logo-wrapper{left:20px;}
     .navi-right-wrapper{right: 20px;}
     .navi-bottom-wrapper{right:20px; bottom: 20px;}
  }
  
  @media (min-width: 768px) {
-    .navi{font-size: 16px;}
+    .navi{font-size: 18px;}  
     .navi-logo-wrapper{left:32px;}
     .navi-right-wrapper{right: 32px;}
  }
  
  @media (min-width: 1300px) {
-    .navi{font-size: 16px;}
     .navi-bottom-wrapper{bottom: 40px;}
  }
+
  
 
  /* image */
@@ -86,6 +87,9 @@
 .container{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   position: fixed;
+   width: 100%;
+   background-color: #fff;
 }
 
 .film:nth-child(-n+5) {
