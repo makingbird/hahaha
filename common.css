@@ -14,9 +14,10 @@
  img {vertical-align: bottom;} /* 이미지 공백 x */
 
 
- /* 마우스 커서 변경 */
+ /* 마우스 커서 변경 
  body, html {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
  a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
+ */
 
 
 
