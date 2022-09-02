@@ -19,6 +19,9 @@
  a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 
 
+
+/* ----------------------index.html---------------------- */
+
  /* header */
  .navi{padding: 20px; position: absolute;}
  .navi-logo-wrapper,.navi-right-wrapper,.navi-bottom-wrapper{position: fixed;}
@@ -43,7 +46,6 @@
  }
 
  
-
  /* image */
  html, body {
     height: 100%;
@@ -83,45 +85,39 @@
     -ms-overflow-style: none;
  }
 
-/* 사진 페이지 */
-.container{
+
+
+ /* ----------------------image.html---------------------- */
+
+ /* 메뉴 */
+.menu{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
    position: fixed;
    width: 100%;
    background-color: #fff;
+   font-size: 14px;
 }
 
-.film:nth-child(-n+5) {
+.menu_film_title:nth-child(-n+5) {
    border-bottom: 1px solid #000;
 }
 
-.film{
+.menu_film_title{
    padding: 2px;
 }
 
-.film:hover:nth-child(-n+5){
+.menu_film_title:hover:nth-child(-n+5){
    background-color:aquamarine ;
 }
 
-.film:nth-child(-n+4) {
+.menu_film_title:nth-child(-n+4) {
    border-right: 1px solid #000;
 }
 
-.film_img_wrapper img{
+.menu_film_img img{
    width: 100%;
    height: 100%;
    object-fit: cover;
 }
 
-@media (min-width: 360px) {
-   .container{
-      font-size: 14px;
-   }
-}
-
-@media (min-width: 768px) {
-   .container{
-      font-size: 16px;
-   }
-}
