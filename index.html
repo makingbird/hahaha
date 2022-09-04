@@ -5,6 +5,22 @@
        <meta charset="utf-8">
        <title>나는 유미</title>
        <link href="common.css" rel="stylesheet">
+       <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"> </script>
+       <script type="text/javascript">
+        function modalOpen() {
+            var modalPop = $('.modal');
+            $(modalPop).show();
+            $('.modal').css({
+                display: 'flex'
+            });
+        }
+
+        function modalClose() {
+            var modalPop = $('.modal');
+            $(modalPop).hide();
+        }
+
+       </script>
    </head>
 
    <body>
@@ -19,9 +35,6 @@
                     <div class="navi-right-menu"><a href="footprints.html">발자취</a></div>
                     <div class="navi-right-menu"><a href="gestbook.html">방명록</a></div>
                </div>
-               <div class="navi-bottom-wrapper">
-                    <div class="navi-bottom-menu"><a href="trashcan.html">휴지통</a></div>
-               </div>
            </div>
        </header>
 
@@ -35,6 +48,22 @@
                ><img src="./imgs/2.JPG" title="이태원"> <!-- 공백 없애기 위해-->
            </div>
        </section>
+
+       <div class="trash">
+            <button class="trash_open" onClick="javascript:modalOpen();">휴지통</button>
+       </div>
+
+       <div class="modal">
+            <div class="modal_img">
+                <img src="./imgs/2.JPG">
+                <img src="./imgs/2.JPG">
+                <img src="./imgs/2.JPG">
+                <img src="./imgs/2.JPG">
+                <div class="trash_close">
+                    <button class="trash_close" onClick="javascript:modalClose();">close</button>
+                </div>
+            </div>
+       </div>
 
   
      

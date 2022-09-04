@@ -5,6 +5,7 @@
    margin: 0;
    font-family: 'Apple SD Gothic Neo', 'Roboto Mono', sans-serif;
 }
+button{ background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer} 
 a { text-decoration: none; color: black; }    
 a:visited { text-decoration: none; }    
 a:hover { text-decoration: none; }    
@@ -25,25 +26,26 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 
 /* header */
 .navi{padding: 20px; position: absolute;}
-.navi-logo-wrapper,.navi-right-wrapper,.navi-bottom-wrapper{position: fixed;}
-.navi-right-menu,.navi-logo-menu,.navi-bottom-menu{padding: 8px;}
+.navi-logo-wrapper,.navi-right-wrapper,.trash{position: fixed;}
+.navi-right-menu,.navi-logo-menu,#trash_open{padding: 8px;}
 .navi-right-menu:nth-child(1),.e {cursor: not-allowed;}
 
 @media (min-width: 360px) {
-   .navi{font-size: 14px;}
+   .navi,#trash_open{font-size: 14px;}
    .navi-logo-wrapper{left:20px;}
    .navi-right-wrapper{right: 20px;}
-   .navi-bottom-wrapper{right:20px; bottom: 20px;}
+   .trash{right:20px; bottom: 20px;}
 }
 
 @media (min-width: 768px) {
-   .navi{font-size: 18px;}  
+   .navi,#trash_open{font-size: 16px;}  
    .navi-logo-wrapper{left:32px;}
    .navi-right-wrapper{right: 32px;}
 }
 
 @media (min-width: 1300px) {
-   .navi-bottom-wrapper{bottom: 40px;}
+   .trash{bottom: 40px;}
+   .navi,#trash_open{font-size: 18px;}  
 }
 
 
@@ -85,6 +87,28 @@ html, body {
    scrollbar-width: none;
    -ms-overflow-style: none;
 }
+
+/* modal */
+.modal {
+   position: fixed;
+   display: none;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   justify-content: center;
+   align-items: center;
+}
+
+.trash_open{
+   display: block;
+}
+
+.modal_img img{
+   width: 150px;
+   display: flex;
+}
+
 
 
 
