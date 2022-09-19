@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
    <head>
@@ -8,16 +9,30 @@
        <link href="common.css" rel="stylesheet">
        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"> </script>
        <script type="text/javascript">
+
+        function modalOpen2() {
+            var modalPop2 = $('.modal_go');
+            $(modalPop2).show();
+            $('.modal_go').css({
+                display: 'flex'
+            });
+        }
+
+        function modalClose2() {
+            var modalPop2 = $('.modal_go');
+            $(modalPop2).hide();
+        }
+
         function modalOpen() {
-            var modalPop = $('.modal');
+            var modalPop = $('.modal_trash');
             $(modalPop).show();
-            $('.modal').css({
+            $('.modal_trash').css({
                 display: 'flex'
             });
         }
 
         function modalClose() {
-            var modalPop = $('.modal');
+            var modalPop = $('.modal_trash');
             $(modalPop).hide();
         }
 
@@ -31,11 +46,14 @@
                    <div class="navi-logo-menu"><a href="index.html">홈</a></div>
                </div>
                <div class="navi-right-wrapper">
-                    <div class="navi-right-menu"><a href="go.html" class="e">고<br>유미</a></div>
+                    <div class="navi-right-menu"><button onClick="javascript:modalOpen2();" class="go_open">고유미</button></div>
                     <div class="navi-right-menu"><a href="image.html">사진</a></div>
                     <div class="navi-right-menu"><a href="footprints.html">발자취</a></div>
-                    <div class="navi-right-menu"><a href="gestbook.html">방명록</a></div>
                </div>
+           </div>
+
+           <div class="trash">
+                <button class="trash_open" onClick="javascript:modalOpen();">휴지통</button>
            </div>
        </header>
 
@@ -50,11 +68,16 @@
            </div>
        </section>
 
-       <div class="trash">
-            <button class="trash_open" onClick="javascript:modalOpen();">휴지통</button>
-       </div>
+       <div class="modal_go">
+        <div class="modal_gpp">
+          jj
+        </div>
+            <div class="go">
+                <button class="go_close" onClick="javascript:modalClose2();">꺼져라</button>
+            </div>
+        </div>
 
-       <div class="modal">
+       <div class="modal_trash">
             <div class="modal_img">
                 <div class="item"><img src="./imgs/trash/000001.jpg"></div>
                 <div class="item"><img src="./imgs/trash/000002.jpg"></div>
@@ -74,7 +97,6 @@
            </div>
        </div>
 
-  
      
    </body>
 </html>
