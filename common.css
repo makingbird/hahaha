@@ -34,7 +34,7 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
    .navi-logo-wrapper{left:20px;}
    .navi-right-wrapper{right: 20px;}
    .trash{right:20px; bottom: 20px;}
-   .go{right:20px; bottom: 20px;}
+   .go{right:20px; top: 20px;}
 }
 
 @media (min-width: 768px) {
@@ -44,7 +44,7 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 }
 
 @media (min-width: 1300px) {
-   .go{top: 40px;}
+   .go{top: 20px;}
    .trash{bottom: 40px;}
    .navi,.trash .trash_open,.go_open,.go_close,.trash_close{font-size: 18px;}  
 }
@@ -125,7 +125,7 @@ html, body {
 
 .modal_go_wrapper{
    overflow: auto;
-
+   margin-top:80px;
 }
 
 @media (min-width: 360px) {
