@@ -263,7 +263,7 @@ html, body {
 
 
 
-/* ----------------------image.html---------------------- */
+/* ----------------------mmo.html---------------------- */
 
 
 
@@ -281,9 +281,14 @@ html, body {
 .foot_item_keyword{
    font-size: 32px;
    padding: 8px 20px;
+   display: block;
 }
 
 .foot_item_title{
    text-align: center;
    padding: 20px;
+}
+
+.r{
+   width: 120px;
 }

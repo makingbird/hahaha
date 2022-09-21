@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- 미디어쿼리 사용시 넣어주기-->
+       <meta charset="utf-8">
+       <title>나는 유미</title>
+       <link href="common.css" rel="stylesheet">
+       <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"> </script>
+       <script type="text/javascript">
+
+        function modalOpen() {
+            var modalPop2 = $('.foot_item_memo2');
+            $(modalPop2).show();
+            $('.foot_item_memo').css({
+                display: 'flex'
+            });
+        }
+          
+       </script>
+    </head>
+
+    <body>
+        <div class="foot">
+            <div class="foot_item">
+                <div class="foot_item_title">키워드</div> 
+                    <button onClick="javascript:modalOpen();" class="foot_item_keyword">공원</button>
+                    <button onClick="javascript:modalOpen1();" class="foot_item_keyword">바다</button>
+                    <button onClick="javascript:modalOpen2();" class="foot_item_keyword">산</button>
+                    <button onClick="javascript:modalOpen3();" class="foot_item_keyword">수목원</button>
+                    <button onClick="javascript:modalOpen4();" class="foot_item_keyword">천문대</button>
+                    <button onClick="javascript:modalOpen5();" class="foot_item_keyword">음식</button>
+                    <button onClick="javascript:modalOpen6();" class="foot_item_keyword">골목</button>
+                    <button onClick="javascript:modalOpen7();" class="foot_item_keyword">스위스</button>
+            </div>
+            <div class="foot_item">
+                <div class="foot_item_title">메모</div>
+                    <div class="foot_item_memo" style="display:none;">
+                        <p>dd</p>내용
+                        <img src="./imgs/1.JPG" class="r">
+                    </div>
+                
+            </div>
+
+                
+            </div>
+        </div>
+    </body>
+</html>
