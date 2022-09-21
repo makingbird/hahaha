@@ -154,6 +154,10 @@ html, body {
       height: 440px;
       margin-bottom: 20px;
    }
+   .modal_info{
+      width: 200px;
+      font-size: 14px;
+   }
 }
 
 @media (min-width: 768px) {
