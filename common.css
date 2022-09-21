@@ -30,7 +30,7 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 .navi-right-menu,.navi-logo-menu,.trash button{padding: 8px;}
 
 @media (min-width: 360px) {
-   .navi,.trash .trash_open,.go_open,.go_close,.trash_close{font-size: 14px;}
+   .trash .trash_open,.go_open,.go_close,.trash_close{font-size: 14px;}
    .navi-logo-wrapper{left:20px;}
    .navi-right-wrapper{right: 20px;}
    .trash{right:20px; bottom: 20px;}
@@ -38,7 +38,7 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 }
 
 @media (min-width: 768px) {
-   .navi,.trash .trash_open,.go_open,.go_close,.trash_close{font-size: 16px;}  
+   .trash .trash_open,.go_open,.go_close,.trash_close{font-size: 16px;}  
    .navi-logo-wrapper{left:32px;}
    .navi-right-wrapper{right: 32px;}
 }
@@ -46,7 +46,7 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 @media (min-width: 1300px) {
    .go{top: 20px;}
    .trash{bottom: 40px;}
-   .navi,.trash .trash_open,.go_open,.go_close,.trash_close{font-size: 18px;}  
+   .go_open,.go_close,.trash_close,.navi-right-menu{font-size: 24px;}  
 }
 
 
@@ -90,7 +90,24 @@ html, body {
    -ms-overflow-style: none;
 }
 
-/* ----------------------go---------------------- */
+
+/* ----------------------info---------------------- */
+
+.modal_info {
+   display: none;
+   top: 0;
+   right: 0;
+   justify-content: center;
+   background-color: #fff;
+   border-top: 1px solid #000;
+}
+
+.modal_info_wrapper {
+   padding: 16px 8px;
+}
+
+
+/* ----------------------camera---------------------- */
 
 .modal_go {
    position: fixed;
@@ -140,7 +157,7 @@ html, body {
 }
 
 @media (min-width: 768px) {
-   .modal_go {
+   .modal_go, .modal_info {
       width: 440px;
    }
    .modal_go_img {
@@ -263,7 +280,7 @@ html, body {
 
 
 
-/* ----------------------mmo.html---------------------- */
+/* ----------------------memo.html---------------------- */
 
 
 

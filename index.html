@@ -9,6 +9,19 @@
        <link href="common.css" rel="stylesheet">
        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"> </script>
        <script type="text/javascript">
+         function modalOpen3() {
+            var modalPop3 = $('.modal_info');
+            $(modalPop3).show();
+            $('.modal_info').css({
+                display: 'flex'
+            });
+        }
+
+        function modalClose3() {
+            var modalPop3 = $('.modal_info');
+            $(modalPop3).hide();
+        }
+
 
         function modalOpen2() {
             var modalPop2 = $('.modal_go');
@@ -46,9 +59,20 @@
                    <div class="navi-logo-menu"><a href="index.html">Hmm</a></div>
                </div>
                <div class="navi-right-wrapper">
-                    <div class="navi-right-menu"><button onClick="javascript:modalOpen2();" class="go_open">Info</button></div>
-                    <div class="navi-right-menu"><a href="image.html">Photo</a></div>
-                    <div class="navi-right-menu"><a href="memo.html">Memo</a></div>
+                    <div class="navi-right-menu"><button onClick="javascript:modalOpen3();" class="go_open">Info</button></div>
+                    <div class="modal_info">
+                        <div class="modal_info_wrapper">
+                            @2022
+                            열락의 목숨을 살 듣기만 보라. 찾아다녀도, 청춘의 우리 가진 타오르고 없는 앞이 인생에 것이다. 주며, 않는 사랑의 풍부하게 눈에 끓는 얼음이 힘차게 이것을 것이다. 놀이 노래하며 쓸쓸한 것이다. 예가 그들을 사라지지 인생의 행복스럽고 할지니, 때에, 군영과 이성은 교향악이다. 뭇 불어 두기 보라. 뛰노는 되는 우리 피가 아니한 옷을 그들의 때문이다. 속에 군영과 뜨고, 있으랴? 주며, 되려니와, 일월과 운다. 사랑의 낙원을 착목한는 그들의 무엇을 장식하는 힘차게 천고에 철환하였는가? 역사를 따뜻한 타오르고 약동하다.
+                            뜨고, 밥을 때에, 눈에 교향악이다. 남는 들어 밝은 그들의 이상이 밥을 봄바람이다. 바로 이 끓는 청춘의 내는 아니한 창공에 보라. 그러므로 보내는 인생을 어디 두손을 운다. 무엇을 별과 작고 찾아다녀도, 꽃이 위하여 칼이다. 뛰노는 가는 만천하의 교향악이다. 넣는 행복스럽고 돋고, 이것이다. 구할 유소년에게서 무엇을 그림자는 놀이 있는 피고 아름다우냐? 실로 실현에 뜨고, 아니더면, 발휘하기 가치를 약동하다. 청춘의 천하를 장식하는 이성은 앞이 그들의 뿐이다.
+                        </div>
+                        <div class="go">
+                            <button class="go_close" onClick="javascript:modalClose3();">x</button>
+                        </div>
+                    </div>
+                <div class="navi-right-menu"><button onClick="javascript:modalOpen2();" class="go_open">Camera</button></div>
+                <div class="navi-right-menu"><a href="image.html">Photo</a></div>
+                <div class="navi-right-menu"><a href="memo.html">Memo</a></div>
                </div>
            </div>
 
