@@ -3,7 +3,7 @@
    padding: 0;
    border: 0;
    margin: 0;
-   font-family: 'Apple SD Gothic Neo', 'Roboto Mono', sans-serif;
+   font-family: 'Cormorant Garamond', 'Apple SD Gothic Neo', 'Roboto Mono', sans-serif;
 }
 button{ background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer} 
 a { text-decoration: none; color: black; }    
@@ -30,7 +30,7 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 .navi-right-menu,.navi-logo-menu,.trash button{padding: 8px;}
 
 @media (min-width: 360px) {
-   .trash .trash_open,.go_open,.go_close,.trash_close{font-size: 14px;}
+   .go_open,.go_close,.trash_close,.navi-right-menu{font-size: 16px;}
    .navi-logo-wrapper{left:20px;}
    .navi-right-wrapper{right: 20px;}
    .trash{right:20px; bottom: 20px;}
@@ -38,7 +38,6 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 }
 
 @media (min-width: 768px) {
-   .trash .trash_open,.go_open,.go_close,.trash_close{font-size: 16px;}  
    .navi-logo-wrapper{left:32px;}
    .navi-right-wrapper{right: 32px;}
 }
@@ -133,7 +132,7 @@ html, body {
 .go_close{
    color:#000;
    text-align: right;
-   padding: 8px;
+   padding: 8px 16px;
  }
 
  .modal_go {
