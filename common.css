@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+
 /* CSS RESET */
 * {
    padding: 0;
@@ -61,10 +63,6 @@ html, body {
    box-sizing: border-box;
 }
 
-.thumbnail-content-wrapper{
-   height: 100%;
-}
-
 .thumbnail-content-wrapper::-webkit-scrollbar {
   display: none;
 }
@@ -77,13 +75,18 @@ html, body {
 
 }
 
+.thumbnail-content-wrapper img:hover {
+   transform: scale(2);
+}
+
 .thumbnail-content-wrapper img:nth-child(-n+5){
    margin-right : 20px;
 }
 
 /* 가로 스크롤 적용 */
 .thumbnail-content-wrapper{
-   overflow-x:auto; /* 안쓰면 다른 영역도 같이 움직임 */
+   height: 100%;
+   overflow: visible;
    white-space:nowrap; /* 사진 가로로 넘치게 */
    scrollbar-width: none;
    -ms-overflow-style: none;
@@ -311,4 +314,8 @@ html, body {
 
 .r{
    width: 120px;
+}
+
+.hangeul {
+   font-family: 'Nanum Myeongjo';
 }
