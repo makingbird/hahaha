@@ -36,16 +36,18 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
    .navi-logo-wrapper{left:20px;}
    .navi-right-wrapper{right: 20px;}
    .trash{right:20px; bottom: 20px;}
-   .go{right:20px; top: 20px;}
+   .go.text{right:8px; top: 20px;}
+   .go.icon{right:20px; top: 28px;}
 }
 
 @media (min-width: 768px) {
+   .go.text{right:20px;}
    .navi-logo-wrapper{left:32px;}
    .navi-right-wrapper{right: 32px;}
 }
 
 @media (min-width: 1300px) {
-   .go{top: 20px;}
+   .go.icon{right:10px;}
    .trash{bottom: 40px;}
    .go_open,.go_close,.trash_close,.navi-right-menu{font-size: 24px;}  
 }
@@ -75,10 +77,6 @@ html, body {
 
 }
 
-.thumbnail-content-wrapper img:hover {
-   transform: scale(2);
-}
-
 .thumbnail-content-wrapper img:nth-child(-n+5){
    margin-right : 20px;
 }
@@ -86,12 +84,26 @@ html, body {
 /* 가로 스크롤 적용 */
 .thumbnail-content-wrapper{
    height: 100%;
-   overflow: visible;
    white-space:nowrap; /* 사진 가로로 넘치게 */
    scrollbar-width: none;
    -ms-overflow-style: none;
 }
 
+@media (min-width: 360px) {
+   .thumbnail-content-wrapper{
+      overflow-x: auto;
+   }
+}
+
+@media (min-width: 768px) {
+   .thumbnail-content-wrapper img:hover {
+      transform: scale(1.8);
+   }
+
+   .thumbnail-content-wrapper{
+      overflow: visible;
+   }
+}   
 
 /* ----------------------info---------------------- */
 
@@ -107,6 +119,10 @@ html, body {
 .modal_info_wrapper {
    padding: 16px 8px;
 }
+
+.go_close.text{
+   padding: 8px 16px;
+ }
 
 
 /* ----------------------camera---------------------- */
@@ -125,6 +141,7 @@ html, body {
 .modal_go_img img{
    width: 100%;
    height: 100%;
+   border-radius: 8px;
 }
 
 .go_open{
@@ -135,7 +152,6 @@ html, body {
 .go_close{
    color:#000;
    text-align: right;
-   padding: 8px 16px;
  }
 
  .modal_go {
@@ -144,7 +160,7 @@ html, body {
 
 .modal_go_wrapper{
    overflow: auto;
-   margin-top:80px;
+   padding-top:80px;
 }
 
 @media (min-width: 360px) {
@@ -153,7 +169,6 @@ html, body {
    }
    .modal_go_img {
       width: 340px;
-      height: 440px;
       margin-bottom: 20px;
    }
    .modal_info{
@@ -164,11 +179,10 @@ html, body {
 
 @media (min-width: 768px) {
    .modal_go, .modal_info {
-      width: 440px;
+      width: 340px;
    }
    .modal_go_img {
-      width: 400px;
-      height: 440px;
+      width: 320px;
       margin-bottom: 20px;
    }
 }
