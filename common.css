@@ -306,6 +306,17 @@ html, body {
   object-fit: cover;
 }
 
+@media (min-width: 360px) {
+   .menu_film_img{
+      padding-top: 37px;
+   }
+}
+
+@media (min-width: 768px) {
+   .menu_film_img{
+      padding-top: 21px;
+   }
+}
 
 
 
