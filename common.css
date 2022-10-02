@@ -326,7 +326,6 @@ html, body {
 
 .foot{
    display: grid;
-   grid-template-columns: 440px 1fr;
    align-content: stretch;
    height: 100%;
 }
@@ -336,7 +335,6 @@ html, body {
 }
 
 .foot_item_keyword{
-   font-size: 32px;
    padding: 8px 20px;
    display: block;
    color: #000;
@@ -357,4 +355,28 @@ html, body {
 
 .hangeul {
    font-family: 'Nanum Myeongjo';
+}
+
+@media (min-width: 360px) {
+   .foot{
+      grid-template-columns: 128px 1fr;
+   }
+   .foot_item_title{
+      font-size: 12px;
+   }
+   .foot_item_keyword{
+      font-size: 24px;
+   }
+}
+
+@media (min-width: 768px) {
+   .foot{
+      grid-template-columns: 440px 1fr;
+   }
+   .foot_item_title{
+      font-size: 16px;
+   }
+   .foot_item_keyword{
+      font-size: 32px;
+   }
 }
