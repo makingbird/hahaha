@@ -273,6 +273,7 @@ html, body {
   width: 100%;
   background-color: #fff;
   font-size: 14px;
+  color: #000;
 }
 
 .menu_film_title:nth-child(-n+5) {
@@ -323,6 +324,7 @@ html, body {
    font-size: 32px;
    padding: 8px 20px;
    display: block;
+   color: #000;
 }
 
 .foot_item_title{
