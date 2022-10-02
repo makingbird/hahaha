@@ -276,6 +276,10 @@ html, body {
   color: #000;
 }
 
+.menu button{
+   color:#000;
+}
+
 .menu_film_title:nth-child(-n+5) {
   border-bottom: 1px solid #000;
 }
@@ -324,6 +328,10 @@ html, body {
    font-size: 32px;
    padding: 8px 20px;
    display: block;
+   color: #000;
+}
+
+.foot_item_keyword botton{
    color: #000;
 }
 
