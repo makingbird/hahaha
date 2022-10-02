@@ -7,7 +7,7 @@
    margin: 0;
    font-family: 'Cormorant Garamond', 'Apple SD Gothic Neo', 'Roboto Mono', sans-serif;
 }
-button{ background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer} 
+button{ color:#000; background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer} 
 a { text-decoration: none; color: black; }    
 a:visited { text-decoration: none; }    
 a:hover { text-decoration: none; }    
@@ -331,7 +331,7 @@ html, body {
    color: #000;
 }
 
-.foot_item_keyword botton{
+.foot_item_keyword button{
    color: #000;
 }
 
