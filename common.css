@@ -228,7 +228,6 @@ html, body {
 
 @media (min-width: 360px) {
   .modal_img{
-     padding-top: 200px;
      column-gap: 40px;
      width: 320px;
   }
@@ -240,7 +239,6 @@ html, body {
 
 @media (min-width: 768px) {
   .modal_img{
-     padding-top: 0;
      column-gap: 20px;
      width: 640px;
   }
@@ -252,7 +250,6 @@ html, body {
 
 @media (min-width: 900px) {
   .modal_img{
-   padding-top: 0;
      column-gap: 20px;
      width: 840px;
   }
