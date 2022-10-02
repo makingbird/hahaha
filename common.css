@@ -252,6 +252,7 @@ html, body {
 
 @media (min-width: 900px) {
   .modal_img{
+   padding-top: 0;
      column-gap: 20px;
      width: 840px;
   }
