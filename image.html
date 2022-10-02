@@ -7,40 +7,124 @@
        <meta charset="utf-8">
        <title>사진</title>
        <link href="common.css" rel="stylesheet">
-   </head>
+       <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"> </script>
+       <script type="text/javascript">
+            function modalOpen4() {
+                var modalPop = $('.PresdePaul250D');
+                $(modalPop).show();
+                $('.FujiC200, .MyHeart200, .Kodak, .PresdePaul50D').css({
+                    display: 'none'
+                });
+                $('.menu_film_title:nth-child(1)').css({
+                    background: 'aquamarine'
+                });
+                $('.menu_film_title.on2,.menu_film_title.on3,.menu_film_title.on4,.menu_film_title.on5').css({
+                    background: 'white'
+                });
+            }
+
+            function modalOpen5() {
+                var modalPop = $('.FujiC200');
+                $(modalPop).show();
+                $('.PresdePaul250D, .MyHeart200, .Kodak, .PresdePaul50D').css({
+                    display: 'none'
+                });
+                $('.menu_film_title:nth-child(2)').css({
+                    background: 'aquamarine'
+                });
+                $('.menu_film_title.on1,.menu_film_title.on3,.menu_film_title.on4,.menu_film_title.on5').css({
+                    background: 'white'
+                });
+            }
+
+            function modalOpen6() {
+                var modalPop = $('.MyHeart200');
+                $(modalPop).show();
+                $('.PresdePaul250D, .FujiC200, .Kodak, .PresdePaul50D').css({
+                    display: 'none'
+                });
+                $('.menu_film_title:nth-child(3)').css({
+                    background: 'aquamarine'
+                });
+                $('.menu_film_title.on1,.menu_film_title.on2,.menu_film_title.on4,.menu_film_title.on5').css({
+                    background: 'white'
+                });
+            }
+
+            function modalOpen7() {
+                var modalPop = $('.Kodak');
+                $(modalPop).show();
+                $('.PresdePaul250D, .FujiC200, .MyHeart200, .PresdePaul50D').css({
+                    display: 'none'
+                });
+                $('.menu_film_title:nth-child(4)').css({
+                    background: 'aquamarine'
+                });
+                $('.menu_film_title.on1,.menu_film_title.on2,.menu_film_title.on3,.menu_film_title.on5').css({
+                    background: 'white'
+                });
+            }
+
+            function modalOpen8() {
+                var modalPop = $('.PresdePaul50D');
+                $(modalPop).show();
+                $('.PresdePaul250D, .FujiC200, .MyHeart200, .Kodak').css({
+                    display: 'none'
+                });
+                $('.menu_film_title:nth-child(5)').css({
+                    background: 'aquamarine'
+                });
+                $('.menu_film_title:nth-child(-n+4)').css({
+                    background: 'white'
+                });
+            }
+
+        </script>
+    </head>
 
    <body>
     
         <div class="menu">
-            <div class="menu_film_title">PresdePaul 50D</div>
-            <div class="menu_film_title">PresdePaul 250D</div>
-            <div class="menu_film_title">Fuji C200</div>
-            <div class="menu_film_title">MyHeart 200</div>
-            <div class="menu_film_title">Kodak</div>
+            <button onClick="javascript:modalOpen4();" class="menu_film_title on1">PresdePaul 250D</button>
+            <button onClick="javascript:modalOpen5();" class="menu_film_title on2">Fuji C200</button>
+            <button onClick="javascript:modalOpen6();" class="menu_film_title on3">MyHeart 200</button>
+            <button onClick="javascript:modalOpen7();" class="menu_film_title on4">Kodak</button>
+            <button onClick="javascript:modalOpen8();" class="menu_film_title on5">PresdePaul 50D</button>
         </div>
 
         
         <div class="menu_film_img">
-            <div class="PresdePaul50D">
-                <img src="./imgs/2.JPG">
-                <img src="./imgs/2.JPG">
-                <img src="./imgs/2.JPG">
+            <div class="PresdePaul250D">
+                <img src="./imgs/PresdePaul250D/을지로/000020.jpg">
+                <img src="./imgs/PresdePaul250D/용마랜드/000031.jpg">
+                <img src="./imgs/PresdePaul250D/용마랜드/000032.jpg">
+                <img src="./imgs/PresdePaul250D/용마랜드/000035.jpg">
+                <img src="./imgs/PresdePaul250D/용마랜드/000036.jpg">
+                <img src="./imgs/PresdePaul250D/용마랜드/000037.jpg">
+                <img src="./imgs/PresdePaul250D/용마랜드/000038.jpg">
+                <img src="./imgs/PresdePaul250D/용마랜드/000040.jpg">
+                <img src="./imgs/PresdePaul250D/용마랜드/000041.jpg">
             </div>
             
-            <div class="PresdePaul250D">
+            <div class="FujiC200" style="display: none;">
+                <img src="./imgs/FujiC200/000008.JPG">
+                <img src="./imgs/FujiC200/000008.JPG">
+            </div>
+
+            <div class="MyHeart200" style="display: none;">
+                <img src="./imgs/Kodak/000026680002.jpg">
+            </div>
+
+            <div class="Kodak" style="display: none;">
 
             </div>
 
-            <div class="Fuji C200">
-
-            </div>
-
-            <div class="MyHeart 200">
-
-            </div>
-
-            <div class="Kodak">
-
+            <div class="PresdePaul50D" style="display: none;">
+                <img src="./imgs/PresdePaul50D/불광역/000034.jpg">
+                <img src="./imgs/PresdePaul50D/불광역/000037.jpg">
+                <img src="./imgs/PresdePaul50D/불광역/000038.jpg">
+                <img src="./imgs/PresdePaul50D/불광역/000039.jpg">
+                <img src="./imgs/PresdePaul50D/불광역/000040.jpg">
             </div>
         </div>
   

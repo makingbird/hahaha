@@ -283,6 +283,10 @@ html, body {
   padding: 2px;
 }
 
+.menu_film_title.on1{
+   background-color:aquamarine ;
+}
+
 .menu_film_title:hover:nth-child(-n+5){
   background-color:aquamarine ;
 }
