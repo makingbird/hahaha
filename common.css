@@ -353,6 +353,7 @@ html, body {
 .foot_item:nth-child(3) {
    grid-row-start: 1;
    grid-row-end: 5;
+   overflow-x: scroll;
 }
 
 
