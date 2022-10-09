@@ -402,7 +402,7 @@ html, body {
    .foot_item_memo{
       padding: 20px;
    }
-   .foot_item_memo img{
+   .foot_item_memo.img{
       width: 40%;
    }
 
