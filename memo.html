@@ -12,7 +12,10 @@
             var modalPop2 = $('.foot_item_memo2');
             $(modalPop2).show();
             $('.foot_item_memo').css({
-                display: 'flex'
+                display: 'block'
+            });
+            $('.foot_item_keyword.1').css({
+                fontWeight: 'bold'
             });
         }
           
@@ -22,8 +25,8 @@
     <body>
         <div class="foot">
             <div class="foot_item">
-                <div class="foot_item_title">사진가</div> 
-                <button onClick="javascript:modalOpen();" class="foot_item_keyword">에릭 요한슨</button>
+                <div class="foot_item_title">사진가</div>
+                <button onClick="javascript:modalOpen();" class="foot_item_keyword 1">에릭 요한슨</button>
                 <button onClick="javascript:modalOpen();" class="foot_item_keyword">나무</button>
                 <button onClick="javascript:modalOpen1();" class="foot_item_keyword">바다</button>
                 
@@ -31,14 +34,23 @@
 
             <div class="foot_item">
                 <div class="foot_item_title">포스터</div>
-                <div class="f"><img src="./imgs/poster/erik.jpg" class="poster"></div>
+                <img src="./imgs/poster/erik.jpg" class="poster">
             </div>
 
             <div class="foot_item">
-                <div class="foot_item_title">기록</div>
+                <div class="foot_item_title">관찰</div>
                 <div class="foot_item_memo" style="display:none;">
-                    <p>dd</p>내용
-                    <img src="./imgs/1.JPG">
+                    <img src="./imgs/poster/erik01.jpg">
+                    <img src="./imgs/poster/2.png">
+                    <img src="./imgs/poster/2.png">
+                    <div class="dd">DATE. 2019.06.05</div>
+                </div>
+            </div>
+
+            <div class="foot_item">
+                <div class="foot_item_title">감상</div>
+                <div class="foot_item_content">
+                    <div class="foot_item_date">DATE. 2019.06.05</div>
                 </div>
             </div>
 

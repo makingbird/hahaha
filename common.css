@@ -355,6 +355,7 @@ html, body {
    grid-row-end: 5;
    overflow-x: scroll;
    border-right: 1.5px solid #000;
+   text-align: center;
 }
 
 
@@ -377,6 +378,10 @@ html, body {
    font-family: 'Nanum Myeongjo';
 }
 
+.foot_item_content{
+   padding: 20px;
+}
+
 @media (min-width: 360px) {
    .foot{
       grid-template-columns: 128px 1fr;
@@ -397,12 +402,18 @@ html, body {
    .foot_item_memo{
       padding: 20px;
    }
+   .foot_item_memo img{
+      width: 40%;
+   }
+
+   .dd{
+      display: block;
+   }
 }
 
 @media (min-width: 768px) {
    .foot{
       grid-template-columns: 360px 1fr 1fr;
-      grid-template-rows: 640px;
    }
    .foot_item_title{
       font-size: 16px;
@@ -411,6 +422,17 @@ html, body {
       font-size: 32px;
    }
    .poster{
-      width: 60%;
+      width: 90%;
+   }
+   .foot_item:nth-child(4){
+      display: block;
+      grid-row-start: 1;
+      grid-row-end: 5;
+   }
+   .dd{
+      display: none;
+   }
+   .foot_item_date{
+      font-size: 12px;
    }
 }
