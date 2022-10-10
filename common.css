@@ -398,9 +398,19 @@ html, body {
    border-radius: 100px;
    font-size: 13px;
 }
-.foot_content_subtitle{
+.foot_content_gps{
    font-size: 12px;
    margin-top: 4px;
+   margin-bottom: 60px;
+}
+.foot_content_remark{
+   padding-top: 40px;
+   font-size: 12px;
+   color: rgb(158, 158, 158);
+}
+.foot_content_memo{
+   margin-top: 4px;
+   line-height: 22px;
 }
 
 @media (min-width: 360px) {
