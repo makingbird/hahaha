@@ -210,7 +210,7 @@ html, body {
       padding: 40px 0 20px;
    }
    .camera{
-      font-size: 39px;
+      font-size: 36px;
       transform: translate(16px, -64px);
    }
 }
@@ -475,10 +475,14 @@ html, body {
    line-height: 22px;
    font-size: 14px;
 }
+.poster{
+   width: 100%;
+}
+
 
 @media (min-width: 360px) {
    .foot{
-      grid-template-columns: 128px 1fr;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: 400px;
    }
    .foot_item_title{
@@ -489,9 +493,6 @@ html, body {
    }
    .foot_item:nth-child(4){
       display: none;
-   }
-   .poster{
-      width: 70%;
    }
    .foot_item_memo{
       padding: 20px;
@@ -513,9 +514,6 @@ html, body {
    }
    .foot_item_keyword{
       font-size: 32px;
-   }
-   .poster{
-      width: 92%;
    }
    .foot_item:nth-child(4){
       display: block;
