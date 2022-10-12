@@ -9,34 +9,34 @@
        <script type="text/javascript">
 
         function modalOpen8() {
-            var modalPop2 = $('.foot_item_memo.1');
+            var modalPop2 = $('.foot_item_memo.on1');
             $(modalPop2).show();
-            $('.foot_item_memo.1').css({
+            $('.foot_item_memo.on1,.foot_item_content.on1').css({
                 display: 'block'
             });
-            $('.foot_item_keyword.1').css({
+            $('.foot_item_keyword.on1').css({
                 fontWeight: 'bold'
             });
-            $('.foot_item_keyword.2').css({
+            $('.foot_item_keyword.on2').css({
                 fontWeight: 'normal'
             });
-            $('.foot_item_memo.2').css({
+            $('.foot_item_memo.on2,.foot_item_content.on2').css({
                 display: 'none'
             });
         }
         function modalOpen9() {
-            var modalPop2 = $('.foot_item_memo.2');
+            var modalPop2 = $('.foot_item_memo.on2');
             $(modalPop2).show();
-            $('.foot_item_memo.2').css({
+            $('.foot_item_memo.on2,.foot_item_content.on2').css({
                 display: 'block'
             });
-            $('.foot_item_keyword.2').css({
+            $('.foot_item_keyword.on2').css({
                 fontWeight: 'bold'
             });
-            $('.foot_item_keyword.1').css({
+            $('.foot_item_keyword.on1').css({
                 fontWeight: 'normal'
             });
-            $('.foot_item_memo.1').css({
+            $('.foot_item_memo.on1,.foot_item_content.on1').css({
                 display: 'none'
             });
         }
@@ -48,36 +48,37 @@
         <div class="foot">
             <div class="foot_item">
                 <div class="foot_item_title">사진가</div>
-                <button onClick="javascript:modalOpen8();" class="foot_item_keyword 1">에릭 요한슨</button>
-                <button onClick="javascript:modalOpen9();" class="foot_item_keyword 2">니코 비 영</button>
+                <button onClick="javascript:modalOpen8();" class="foot_item_keyword on1">에릭 요한슨</button>
+                <button onClick="javascript:modalOpen9();" class="foot_item_keyword on2">니코 비 영</button>
                 
             </div>
 
             <div class="foot_item">
-                <div class="foot_item_memo 1">
+                <div class="foot_item_memo on1">
                     <img src="./imgs/poster/erik.jpg" class="poster">
                 </div>
-                <div class="foot_item_memo 2" style="display:none;">
+                <div class="foot_item_memo on2" style="display:none;">
                     <img src="./imgs/poster/RomanticDays.jpg" class="poster">
                 </div>
             </div>
 
             <div class="foot_item">
                 <div class="foot_item_title">관찰</div>
-                <div class="foot_item_memo 1">
+                <div class="foot_item_memo on1">
                     <img src="./imgs/poster/erik01.jpg" class="poster_img">
                 </div>
-                <div class="foot_item_memo 2" style="display:none;">
+                <div class="foot_item_memo on2" style="display:none;">
                     <img src="./imgs/poster/erik01.jpg" class="poster_img">j
                 </div>
+
             </div>
 
             <div class="foot_item">
                 <div class="foot_item_title">기록</div>
-                <div class="foot_item_content">
+                <div class="foot_item_content on1">
                     <div class="foot_item_wrapper">
                         <div class="foot_content_title">에릭 요한슨 사진전</div>
-                        <div class="foot_content_date">DATE. 2019.06.05</div>
+                        <div class="foot_content_date">DATE. 2019.06.28</div>
                     </div>
                     <div class="foot_content_gps">예술의전당 한가람미술관</div>
                     <div class="foot_content_remark">가게 된 계기</div>
@@ -85,12 +86,29 @@
                     <div class="foot_content_remark">감상평</div>
                     <div class="foot_content_memo">
                         첫 사진전<br>
-                        찍을 사진을 기획하는 과정이 재밌었다. 난 그냥 찍을 뿐인데!
-                        포토샵으로 보정한 히스토리를 같이 보여 줘 새롭고.
+                        찍을 사진을 기획하는 과정이 재밌었다. 난 그냥 찍을 뿐인데!<br>
+                        포토샵으로 보정한 히스토리를 같이 보여 줘 새롭고.<br>
                         굿즈로 키링 샀는데 가방에 아직 달려 있지만 동생이 메고 다님
                     </div>
                     <div class="foot_content_remark">에릭 요한슨</div>
                     <div class="foot_content_memo">우리를 제한시키는 유일한 것은 우리의 상상력입니다.</div>
+
+                </div>
+                <div class="foot_item_content on2" style="display:none;">
+                    <div class="foot_item_wrapper">
+                        <div class="foot_content_title">어쨌든, 사랑</div>
+                        <div class="foot_content_date">DATE. 2022.10.07</div>
+                    </div>
+                    <div class="foot_content_gps">디뮤지엄</div>
+                    <div class="foot_content_remark">가게 된 계기</div>
+                    <div class="foot_content_memo">디자인팀 문화생활</div>
+                    <div class="foot_content_remark">감상평</div>
+                    <div class="foot_content_memo">
+                        참여한 작가가 많았음<br>
+                        사랑이라는 주제만 같고, 다른 스타일의 사진을 볼 수 있어 재밌었다.
+                    </div>
+                    <div class="foot_content_remark">니코 비 영</div>
+                    <div class="foot_content_memo">젊음과 일상의 모습을 진솔하게 담아내는 포토그래퍼</div>
 
                 </div>
                     

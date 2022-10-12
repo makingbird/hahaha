@@ -479,7 +479,6 @@ html, body {
    width: 100%;
 }
 
-
 @media (min-width: 360px) {
    .foot{
       grid-template-columns: 1fr 1fr;
@@ -502,6 +501,10 @@ html, body {
    .dd{
       display: block;
    }
+   .foot_item_keyword.on1{
+      font-weight: bold;
+   }
+
 }
 
 @media (min-width: 768px) {
@@ -524,4 +527,5 @@ html, body {
    .dd{
       display: none;
    }
+
 }
