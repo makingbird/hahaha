@@ -180,7 +180,8 @@ html, body {
 .img_title {
    text-align: center;
    border-bottom: 1px solid #000;
-   padding: 12px;
+   padding: 10px;
+   font-size: 14px;
 }
 
 @media (min-width: 360px) {
