@@ -396,30 +396,26 @@ html, body {
    display: grid;
    align-content: stretch;
    height: 100%; 
+   overflow: hidden;
 }
 
 .foot_item:nth-child(1){
    border-right: 1.5px solid #000;
-   grid-row-start: 1;
-   grid-row-end: 4;
+   overflow: auto;
 }
 
 .foot_item:nth-child(2) {
-   grid-row-start: 4;
-   grid-row-end: 5;
    text-align: center;
    border-top: 1.5px solid #000;
    border-right: 1.5px solid #000;
+   overflow: auto;
 }
 
 .foot_item:nth-child(3) {
-   grid-row-start: 1;
-   grid-row-end: 5;
-   overflow-x: scroll;
    border-right: 1.5px solid #000;
    text-align: center;
+   overflow: auto;
 }
-
 
 .foot_item_keyword{
    padding: 8px 12px;
@@ -479,6 +475,7 @@ html, body {
    width: 100%;
 }
 
+
 @media (min-width: 360px) {
    .foot{
       grid-template-columns: 1fr 1fr;
@@ -491,9 +488,6 @@ html, body {
    .foot_item_keyword{
       font-size: 18px;
    }
-   .foot_item:nth-child(4){
-      display: none;
-   }
 
    .poster_img{
       width: 100%;
@@ -504,14 +498,31 @@ html, body {
    .foot_item_keyword.on1{
       font-weight: bold;
    }
-
+   .foot_item:nth-child(1){
+      grid-row-start: 1;
+      grid-row-end: 4;
+   }
+   .foot_item:nth-child(2) {
+      grid-row-start: 4;
+      grid-row-end: 5;
+   }
+   .foot_item:nth-child(3) {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      overflow: hidden;
+   }
+   .foot_item:nth-child(4) {
+      grid-row-start: 3;
+      grid-row-end: 5;
+      overflow: hidden;
+   }
 }
 
 @media (min-width: 768px) {
    .foot{
       grid-template-columns: 360px 1fr 1fr;
       grid-auto-rows: min-content;
-      grid-template-rows: repeat(3, minmax(170px, auto));
+      grid-template-rows: repeat(5, minmax(302px, auto));
    }
    .foot_item_title{
       font-size: 16px;
@@ -519,13 +530,24 @@ html, body {
    .foot_item_keyword{
       font-size: 32px;
    }
-   .foot_item:nth-child(4){
-      display: block;
+   .foot_item:nth-child(1){
       grid-row-start: 1;
+      grid-row-end: 3;
+   }
+   .foot_item:nth-child(2) {
+      grid-row-start: 3;
       grid-row-end: 5;
    }
    .dd{
       display: none;
    }
-
+   .foot_item:nth-child(3) {
+      grid-row-start: 1;
+      grid-row-end: 5;
+   }
+   .foot_item:nth-child(4){
+      display: block;
+      grid-row-start: 1;
+      grid-row-end: 5;
+   }
 }
