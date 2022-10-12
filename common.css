@@ -191,7 +191,6 @@ html, body {
 .camera{
    position: absolute;
    transform: translate(20px, -70px);
-   font-size: 43px;
    text-shadow: 4px 2px 5px #fd1818db;
    color: #fc010000;
 }
@@ -210,6 +209,9 @@ html, body {
    }
    .modal_go_wrapper{
       padding: 40px 0 20px;
+   }
+   .camera{
+      font-size: 39px;
    }
 }
 
@@ -242,6 +244,9 @@ html, body {
       border-radius: 10px;
       box-shadow: inset 0px 0px 5px white;
       
+   }
+   .camera{
+      font-size: 43px;
    }
 }
 
