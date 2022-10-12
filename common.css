@@ -28,8 +28,9 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 
 /* header */
 .navi{padding: 20px; position: absolute;}
-.navi-logo-wrapper,.navi-right-wrapper,.trash,.go{position: fixed;}
+.navi-logo-wrapper,.navi-right-wrapper,.trash{position: fixed;}
 .navi-right-menu,.navi-logo-menu{padding: 8px;}
+
 
 @media (min-width: 360px) {
    .go_open,.go_close,.navi-right-menu{font-size: 16px;}
@@ -38,7 +39,6 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
    .navi-right-wrapper{right: 20px;}
    .trash{right:20px; bottom: 20px;}
    .go.text{right:8px; top: 20px;}
-   .go.icon{right:20px; top: 28px;}
 }
 
 @media (min-width: 768px) {
@@ -48,7 +48,6 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 }
 
 @media (min-width: 1300px) {
-   .go.icon{right:10px;}
    .trash{bottom: 40px;}
    .go_open,.go_close,.navi-right-menu{font-size: 24px;}
    .trash_close{font-size: 28px;}  
@@ -156,6 +155,14 @@ html, body {
    text-align: right;
  }
 
+.go_close img{
+   vertical-align: super;
+}
+
+.go_title{
+   font-size: 24px;
+}
+
  .modal_go {
    width: 100%;
 }
@@ -164,20 +171,10 @@ html, body {
    overflow-y: auto;
 }
 
-.modal_go_wrapper::-webkit-scrollbar{
-   width: 10px;
-}
-.modal_go_wrapper::-webkit-scrollbar-thumb {
-   background-color: #2f3542;
-   border-radius: 10px;
-   background-clip: padding-box;
-   border: 2px solid transparent;
-}
- .modal_go_wrapper::-webkit-scrollbar-track {
-   background-color: grey;
-   border-radius: 10px;
-   box-shadow: inset 0px 0px 5px white;
-   
+.modal_go_beteewn{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
 }
 
 @media (min-width: 360px) {
@@ -193,7 +190,7 @@ html, body {
       font-size: 14px;
    }
    .modal_go_wrapper{
-      padding: 80px 0 20px;
+      padding: 40px 0 20px;
    }
 }
 
@@ -209,7 +206,22 @@ html, body {
       margin-bottom: 20px;
    }
    .modal_go_wrapper{
-      padding: 80px 15px;
+      padding: 40px 15px;
+      
+   }
+   .modal_go_wrapper::-webkit-scrollbar{
+      width: 10px;
+   }
+   .modal_go_wrapper::-webkit-scrollbar-thumb {
+      background-color: #2f3542;
+      border-radius: 10px;
+      background-clip: padding-box;
+      border: 2px solid transparent;
+   }
+    .modal_go_wrapper::-webkit-scrollbar-track {
+      background-color: grey;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 5px white;
       
    }
 }
