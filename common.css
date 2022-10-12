@@ -161,8 +161,23 @@ html, body {
 }
 
 .modal_go_wrapper{
-   overflow: auto;
-   padding-top:80px;
+   overflow-y: auto;
+}
+
+.modal_go_wrapper::-webkit-scrollbar{
+   width: 10px;
+}
+.modal_go_wrapper::-webkit-scrollbar-thumb {
+   background-color: #2f3542;
+   border-radius: 10px;
+   background-clip: padding-box;
+   border: 2px solid transparent;
+}
+ .modal_go_wrapper::-webkit-scrollbar-track {
+   background-color: grey;
+   border-radius: 10px;
+   box-shadow: inset 0px 0px 5px white;
+   
 }
 
 @media (min-width: 360px) {
@@ -177,15 +192,25 @@ html, body {
       width: 200px;
       font-size: 14px;
    }
+   .modal_go_wrapper{
+      padding: 80px 32px;
+   }
 }
 
 @media (min-width: 768px) {
-   .modal_go, .modal_info {
-      width: 340px;
+   .modal_info {
+      width: 380px;
+   }
+   .modal_go{
+      width: 420px;
    }
    .modal_go_img {
-      width: 320px;
+      width: 380px;
       margin-bottom: 20px;
+   }
+   .modal_go_wrapper{
+      padding: 80px 15px;
+      
    }
 }
 
