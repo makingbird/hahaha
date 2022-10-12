@@ -8,14 +8,36 @@
        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"> </script>
        <script type="text/javascript">
 
-        function modalOpen() {
-            var modalPop2 = $('.foot_item_memo2');
+        function modalOpen8() {
+            var modalPop2 = $('.foot_item_memo.1');
             $(modalPop2).show();
-            $('.foot_item_memo').css({
+            $('.foot_item_memo.1').css({
                 display: 'block'
             });
             $('.foot_item_keyword.1').css({
                 fontWeight: 'bold'
+            });
+            $('.foot_item_keyword.2').css({
+                fontWeight: 'normal'
+            });
+            $('.foot_item_memo.2').css({
+                display: 'none'
+            });
+        }
+        function modalOpen9() {
+            var modalPop2 = $('.foot_item_memo.2');
+            $(modalPop2).show();
+            $('.foot_item_memo.2').css({
+                display: 'block'
+            });
+            $('.foot_item_keyword.2').css({
+                fontWeight: 'bold'
+            });
+            $('.foot_item_keyword.1').css({
+                fontWeight: 'normal'
+            });
+            $('.foot_item_memo.1').css({
+                display: 'none'
             });
         }
           
@@ -26,20 +48,27 @@
         <div class="foot">
             <div class="foot_item">
                 <div class="foot_item_title">사진가</div>
-                <button onClick="javascript:modalOpen();" class="foot_item_keyword 1">에릭 요한슨</button>
-                <button onClick="javascript:modalOpen();" class="foot_item_keyword">나무</button>
-                <button onClick="javascript:modalOpen1();" class="foot_item_keyword">바다</button>
+                <button onClick="javascript:modalOpen8();" class="foot_item_keyword 1">에릭 요한슨</button>
+                <button onClick="javascript:modalOpen9();" class="foot_item_keyword 2">니코 비 영</button>
                 
             </div>
 
             <div class="foot_item">
-                <img src="./imgs/poster/erik.jpg" class="poster">
+                <div class="foot_item_memo 1">
+                    <img src="./imgs/poster/erik.jpg" class="poster">
+                </div>
+                <div class="foot_item_memo 2" style="display:none;">
+                    <img src="./imgs/poster/RomanticDays.jpg" class="poster">
+                </div>
             </div>
 
             <div class="foot_item">
                 <div class="foot_item_title">관찰</div>
-                <div class="foot_item_memo" style="display:none;">
+                <div class="foot_item_memo 1">
                     <img src="./imgs/poster/erik01.jpg" class="poster_img">
+                </div>
+                <div class="foot_item_memo 2" style="display:none;">
+                    <img src="./imgs/poster/erik01.jpg" class="poster_img">j
                 </div>
             </div>
 

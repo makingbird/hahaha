@@ -495,9 +495,7 @@ html, body {
    .foot_item:nth-child(4){
       display: none;
    }
-   .foot_item_memo{
-      padding: 20px;
-   }
+
    .poster_img{
       width: 100%;
    }
