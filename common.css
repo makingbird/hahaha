@@ -184,6 +184,18 @@ html, body {
    font-size: 14px;
 }
 
+.go_modal_wrapper{
+   position: relative;
+}
+
+.camera{
+   position: absolute;
+   transform: translate(20px, -70px);
+   font-size: 43px;
+   text-shadow: 4px 2px 5px #fd1818db;
+   color: #fc010000;
+}
+
 @media (min-width: 360px) {
    .modal_go {
       width: 100%;
