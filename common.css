@@ -177,6 +177,12 @@ html, body {
    margin-bottom: 20px;
 }
 
+.img_title {
+   text-align: center;
+   border-bottom: 1px solid #000;
+   padding: 12px;
+}
+
 @media (min-width: 360px) {
    .modal_go {
       width: 100%;
