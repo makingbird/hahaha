@@ -562,7 +562,7 @@ html, body {
    .foot_item:nth-child(3) {
       grid-row-start: 1;
       grid-row-end: 6;
-      overflow: auto;
+      overflow: hidden;
    }
    .foot_item:nth-child(4){
       display: block;
@@ -581,5 +581,8 @@ html, body {
    .foot{
       grid-template-columns: 360px 1fr 1fr;
       grid-template-rows: repeat(5, minmax(252px, auto));
+   }
+   .foot_item:nth-child(3) {
+      overflow: auto;
    }
 }
