@@ -450,9 +450,6 @@ html, body {
    font-weight: 500;
 }
 .foot_content_date{
-   padding: 5px 8px 3px 8px;
-   border: 1px solid #000;
-   border-radius: 100px;
    font-size: 13px;
 }
 .foot_content_gps{
@@ -534,6 +531,13 @@ html, body {
       line-height: 22px;
       font-size: 12px;
    }
+   .foot_content_date{
+      border-radius: 0;
+   }
+   .foot_content_date{
+      border-top: 1px solid #000;
+      border-left: 1px solid #000;
+   }
 }
 
 @media (min-width: 768px) {
@@ -567,7 +571,7 @@ html, body {
    .foot_item:nth-child(4){
       display: block;
       grid-row-start: 1;
-      grid-row-end: 5;
+      grid-row-end: 6;
    }
    .foot_content_gps{
       margin-bottom: 60px;
@@ -588,7 +592,13 @@ html, body {
       background-color: grey;
       border-radius: 10px;
       box-shadow: inset 0px 0px 5px white;
-      
+   }
+   .foot_content_date{
+      border-radius: 100px;
+      padding: 5px 8px 3px 8px;
+   }
+   .foot_content_date{
+      border: 1px solid #000;
    }
 }
 
