@@ -586,3 +586,9 @@ html, body {
       overflow: auto;
    }
 }
+
+@media (min-width: 2000px) {
+   .foot{
+      grid-template-columns: 520px 1fr 1fr;
+   }
+}
