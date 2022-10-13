@@ -458,7 +458,6 @@ html, body {
 .foot_content_gps{
    font-size: 12px;
    margin-top: 4px;
-   margin-bottom: 60px;
 }
 .foot_content_remark{
    padding-top: 40px;
@@ -468,7 +467,6 @@ html, body {
 .foot_content_memo{
    margin-top: 4px;
    line-height: 22px;
-   font-size: 14px;
 }
 .poster{
    background-size: cover;
@@ -520,12 +518,20 @@ html, body {
    .foot_item:nth-child(3) {
       grid-row-start: 1;
       grid-row-end: 3;
-      overflow: hidden;
+      overflow: auto;
    }
    .foot_item:nth-child(4) {
       grid-row-start: 3;
       grid-row-end: 5;
-      overflow: hidden;
+      overflow: auto;
+   }
+   .foot_content_gps{
+      margin-bottom: 0px;
+   }
+   .foot_content_memo{
+      margin-top: 4px;
+      line-height: 22px;
+      font-size: 12px;
    }
 }
 
@@ -562,7 +568,12 @@ html, body {
       grid-row-start: 1;
       grid-row-end: 5;
    }
-
+   .foot_content_gps{
+      margin-bottom: 60px;
+   }
+   .foot_content_memo{
+      font-size: 14px;
+   }
 }
 
 @media (min-width: 1200px) {
