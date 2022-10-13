@@ -414,7 +414,6 @@ html, body {
 .foot_item:nth-child(3) {
    border-right: 1.5px solid #000;
    text-align: center;
-   overflow: auto;
 }
 
 .foot_item_keyword{
@@ -543,7 +542,8 @@ html, body {
    }
    .foot_item:nth-child(3) {
       grid-row-start: 1;
-      grid-row-end: 5;
+      grid-row-end: 6;
+      overflow: auto;
    }
    .foot_item:nth-child(4){
       display: block;
