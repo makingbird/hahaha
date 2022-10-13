@@ -40,6 +40,23 @@
                 display: 'none'
             });
         }
+        function modalOpen10() {
+            var modalPop2 = $('.foot_item_memo.on3');
+            $(modalPop2).show();
+            $('.foot_item_memo.on3,.foot_item_content.on3').css({
+                display: 'block'
+            });
+            $('.foot_item_keyword.on3').css({
+                fontWeight: 'bold'
+            });
+            $('.foot_item_keyword.on1,.foot_item_keyword.on2').css({
+                fontWeight: 'normal'
+            });
+            $('.foot_item_memo.on1,.foot_item_content.on1,.foot_item_memo.on2,.foot_item_content.on2').css({
+                display: 'none'
+            });
+        }
+
           
        </script>
     </head>
@@ -50,7 +67,7 @@
                 <div class="foot_item_title">사진가</div>
                 <button onClick="javascript:modalOpen8();" class="foot_item_keyword on1">에릭 요한슨</button>
                 <button onClick="javascript:modalOpen9();" class="foot_item_keyword on2">니코 비 영</button>
-                
+                <button onClick="javascript:modalOpen9();" class="foot_item_keyword on3">비비안 마이어</button>
             </div>
 
             <div class="foot_item">
