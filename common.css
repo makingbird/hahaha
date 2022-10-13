@@ -394,7 +394,7 @@ html, body {
 
 
 
-/* ----------------------memo.html---------------------- */
+/* ----------------------photographer.html---------------------- */
 
 
 
@@ -607,7 +607,6 @@ html, body {
 @media (min-width: 1200px) {
    .foot{
       grid-template-columns: 360px 1fr 1fr;
-      grid-template-rows: repeat(5, minmax(252px, auto));
    }
    .foot_item:nth-child(3) {
       overflow: auto;
