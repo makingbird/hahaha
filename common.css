@@ -295,6 +295,9 @@ html, body {
       grid-auto-rows: minmax(106px, auto);
       padding-top: 32px;
   }
+  .trash_open{
+      font-size: 16px;
+   }
 }
 
 @media (min-width: 768px) {
@@ -313,6 +316,9 @@ html, body {
   .modal_img img{
      width: 140px;
   }
+  .trash_open{
+      font-size: 24px;
+   }
 }
 
 @media (min-width: 900px) {
@@ -429,10 +435,6 @@ html, body {
 .foot_item_title{
    text-align: center;
    padding: 20px;
-}
-
-.hangeul {
-   font-family: 'Nanum Myeongjo';
 }
 
 .foot_item_content{
