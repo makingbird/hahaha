@@ -471,8 +471,20 @@ html, body {
    font-size: 14px;
 }
 .poster{
-   width: 100%;
+   background-size: cover;
+   background-position: center;
+   height: 100%;
 }
+.foot_item_memo{
+   height: 100%;
+}
+.poster.on1{
+   background-image: url('./imgs/poster/erik.jpg');
+}
+.poster.on2{
+   background-image: url('./imgs/poster/RomanticDays.jpg');
+}
+
 
 
 @media (min-width: 360px) {
@@ -519,9 +531,9 @@ html, body {
 
 @media (min-width: 768px) {
    .foot{
-      grid-template-columns: 360px 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       grid-auto-rows: min-content;
-      grid-template-rows: repeat(5, minmax(302px, auto));
+      grid-template-rows: repeat(5, minmax(186px, auto));
    }
    .foot_item_title{
       font-size: 16px;
@@ -531,11 +543,11 @@ html, body {
    }
    .foot_item:nth-child(1){
       grid-row-start: 1;
-      grid-row-end: 3;
+      grid-row-end: 4;
    }
    .foot_item:nth-child(2) {
-      grid-row-start: 3;
-      grid-row-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 6;
    }
    .dd{
       display: none;
@@ -549,5 +561,13 @@ html, body {
       display: block;
       grid-row-start: 1;
       grid-row-end: 5;
+   }
+
+}
+
+@media (min-width: 1200px) {
+   .foot{
+      grid-template-columns: 360px 1fr 1fr;
+      grid-template-rows: repeat(5, minmax(252px, auto));
    }
 }
