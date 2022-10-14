@@ -9,29 +9,23 @@
        <script type="text/javascript">
 
         function modalOpen9() {
-            var modalPop2 = $('.foot_item_memo.on1');
+            var modalPop2 = $('.foot_item_memo.on1,.foot_item_content.on1');
             $(modalPop2).show();
             $('body, html, .foot_item_memo.on1').scrollTop(0);
-            $('.foot_item_memo.on1,.foot_item_content.on1').css({
-                display: 'block'
-            });
             $('.foot_item_keyword.on1').css({
                 fontWeight: 'bold'
             });
             $('.foot_item_keyword.on2').css({
                 fontWeight: 'normal'
             });
-            $('.foot_item_memo.on2,.foot_item_content.on2').css({
+            $('.foot_item_memo.on2, .foot_item_content.on2').css({
                 display: 'none'
             });
         }
         function modalOpen10() {
-            var modalPop2 = $('.foot_item_memo.on2');
+            var modalPop2 = $('.foot_item_memo.on2,.foot_item_content.on2');
             $(modalPop2).show();
             $('body, html, .foot_item_memo.on2').scrollTop(0);
-            $('.foot_item_memo.on2,.foot_item_content.on2').css({
-                display: 'block'
-            });
             $('.foot_item_keyword.on2').css({
                 fontWeight: 'bold'
             });
@@ -81,6 +75,7 @@
                    <img src="./imgs/poster/erik03.jpg" class="poster_img">
                    <div class="img_title end">~</div>
                 </div>
+
                 <div href="#" class="foot_item_memo on2" style="display:none;">
                     <img src="./imgs/poster/nico01.jpg" class="poster_img">
                     <div class="img_title">!</div>
