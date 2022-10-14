@@ -93,10 +93,8 @@ html, body {
       overflow-x: auto;
    }
    .thumbnail {
-      -ms-padding-top: calc(50vh - 150px);
-      -ms-padding-bottom: calc(50vh - 150px);
-      -webkit-padding-top: calc(50vh - 200px);
-      -webkit-padding-bottom: calc(50vh - 200px);	/* 사파리, 크롬 */
+      padding-top: calc(50vh - 180px);
+      padding-bottom: calc(50vh - 180px);
    }
 }
 
