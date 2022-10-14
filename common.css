@@ -61,8 +61,6 @@ html, body {
 
 .thumbnail {
    height: 100%;
-   padding-top: calc(50vh - 150px);
-   padding-bottom: calc(50vh - 150px);
    box-sizing: border-box;
 }
 
@@ -93,6 +91,12 @@ html, body {
 @media (min-width: 360px) {
    .thumbnail-content-wrapper{
       overflow-x: auto;
+   }
+   .thumbnail {
+      padding-top: calc(50vh - 150px);
+      padding-bottom: calc(50vh - 150px);
+      -webkit-padding-top: calc(50vh - 200px);
+      -webkit-padding-bottom: calc(50vh - 200px);	/* 사파리, 크롬 */
    }
 }
 
