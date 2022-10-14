@@ -611,10 +611,35 @@ html, body {
    .foot_item:nth-child(3) {
       overflow: auto;
    }
+   
+}
+
+@media (min-width: 1920px) {
+   .foot_item:nth-child(1){
+      grid-row-start: 1;
+      grid-row-end: 3;
+   }
+   .foot_item:nth-child(2) {
+      grid-row-start: 3;
+      grid-row-end: 6;
+   }
 }
 
 @media (min-width: 2000px) {
    .foot{
       grid-template-columns: 520px 1fr 1fr;
    }
+   .foot_item:nth-child(1){
+      grid-row-start: 1;
+      grid-row-end: 4;
+   }
+   .foot_item:nth-child(2) {
+      grid-row-start: 4;
+      grid-row-end: 6;
+   }
+   .poster {
+      background-size: contain;
+      background-position: bottom;
+      height: 100%;
+  }
 }
