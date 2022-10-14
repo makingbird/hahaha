@@ -11,6 +11,7 @@
         function modalOpen9() {
             var modalPop2 = $('.foot_item_memo.on1');
             $(modalPop2).show();
+            $('body, html, .foot_item_memo.on1').scrollTop(0);
             $('.foot_item_memo.on1,.foot_item_content.on1').css({
                 display: 'block'
             });
@@ -27,6 +28,7 @@
         function modalOpen10() {
             var modalPop2 = $('.foot_item_memo.on2');
             $(modalPop2).show();
+            $('body, html, .foot_item_memo.on2').scrollTop(0);
             $('.foot_item_memo.on2,.foot_item_content.on2').css({
                 display: 'block'
             });
@@ -40,8 +42,7 @@
                 display: 'none'
             });
         }
-
-          
+       
        </script>
     </head>
 
@@ -66,14 +67,14 @@
             <div class="foot_item">
                 <div class="foot_item_title">관찰</div>
                 <div class="foot_item_memo on1">
-                    <img src="./imgs/poster/erik01.jpg" class="poster_img">
-                    <div class="img_title">❤︎</div>
-                    <img src="./imgs/poster/erik02.jpg" class="poster_img">
-                    <div class="img_title">!</div>
-                    <img src="./imgs/poster/erik03.jpg" class="poster_img">
-                    <div class="img_title end">~</div>
+                   <img src="./imgs/poster/erik01.jpg" class="poster_img">
+                   <div class="img_title">❤︎</div>
+                   <img src="./imgs/poster/erik02.jpg" class="poster_img">
+                   <div class="img_title">!</div>
+                   <img src="./imgs/poster/erik03.jpg" class="poster_img">
+                   <div class="img_title end">~</div>
                 </div>
-                <div class="foot_item_memo on2" style="display:none;">
+                <div href="#" class="foot_item_memo on2" style="display:none;">
                     <img src="./imgs/poster/nico01.jpg" class="poster_img">
                     <div class="img_title">!</div>
                     <img src="./imgs/poster/nico02.jpg" class="poster_img">
