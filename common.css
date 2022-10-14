@@ -481,7 +481,9 @@ html, body {
 .poster.on2{
    background-image: url('./imgs/poster/RomanticDays.jpg');
 }
-
+.end{
+   border:0;
+}
 
 
 @media (min-width: 360px) {
@@ -574,6 +576,7 @@ html, body {
       display: block;
       grid-row-start: 1;
       grid-row-end: 6;
+      border-top: 0;
    }
    .foot_content_gps{
       margin-bottom: 60px;
@@ -602,6 +605,7 @@ html, body {
    .foot_content_date{
       border: 1px solid #000;
    }
+
 }
 
 @media (min-width: 1200px) {
