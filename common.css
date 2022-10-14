@@ -190,6 +190,7 @@ html, body {
    font-size: 14px;
 }
 
+
 .go_modal_wrapper{
    position: relative;
 }
@@ -218,6 +219,9 @@ html, body {
    .camera{
       font-size: 36px;
       transform: translate(16px, -64px);
+   }
+   .img_title.end{
+      border:0;
    }
 }
 
@@ -413,7 +417,6 @@ html, body {
 
 .foot_item:nth-child(1){
    border-right: 1.5px solid #000;
-   overflow: auto;
 }
 
 .foot_item:nth-child(2) {
@@ -554,8 +557,8 @@ html, body {
 @media (min-width: 768px) {
    .foot{
       grid-template-columns: 1fr 1fr 1fr;
-      grid-auto-rows: min-content;
-      grid-template-rows: repeat(5, minmax(186px, auto));
+      /*--grid-auto-rows: min-content;
+      grid-template-rows: repeat(5, minmax(186px, auto));--*/
    }
    .foot_item_title{
       font-size: 16px;
@@ -567,6 +570,7 @@ html, body {
       grid-row-start: 1;
       grid-row-end: 3;
       order: 1;
+      overflow: auto;
    }
    .foot_item:nth-child(2) {
       grid-row-start: 3;
