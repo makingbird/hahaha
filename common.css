@@ -290,6 +290,7 @@ html, body {
 .modal_img{
   justify-items: center;
   display: grid;
+ 
 }
 
 .trash_close{
@@ -316,8 +317,9 @@ html, body {
      column-gap: 20px;
      width: 640px;
      grid-auto-rows: minmax(120px, auto);
-     grid-template-columns: repeat(auto-fill, minmax(20%, auto));
+     grid-template-columns: repeat(auto-fill, minmax(10%, auto));
      padding-top: 0;
+     align-items: center;
   }
 
   .modal_trash{
@@ -344,6 +346,9 @@ html, body {
      column-gap: 0px;
      width: 1340px;
   }
+  .modal_img{
+   grid-template-columns: repeat(auto-fill, minmax(11%, auto));
+   }
 }
 
 
