@@ -32,14 +32,17 @@
             $('.modal_go').css({
                 display: 'flex'
             });
-            $('.navi-right-menu,.trash').css({
-                display: 'none'
-            });  
+            $('.thumbnail').css({
+                filter: 'grayscale(1)'
+            });
         }
 
         function modalClose2() {
             var modalPop = $('.modal_go');
             $(modalPop).hide();
+            $('.thumbnail').css({
+                filter: 'none'
+            });
         }
 
         function modalOpen() {

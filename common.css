@@ -222,9 +222,6 @@ html, body {
    .img_title.end{
       border:0;
    }
-   .modal_go{
-      backdrop-filter: grayscale(1);
-   }
 }
 
 @media (min-width: 768px) {
