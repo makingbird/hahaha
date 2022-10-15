@@ -438,7 +438,6 @@ html, body {
 }
 
 .foot_item_keyword{
-   padding: 8px 12px;
    display: block;
    color: #000;
 }
@@ -512,9 +511,9 @@ html, body {
       font-size: 12px;
    }
    .foot_item_keyword{
-      font-size: 18px;
+      font-size: 16px;
+      padding: 4px 12px;
    }
-
    .poster_img{
       width: 100%;
    }
@@ -571,7 +570,8 @@ html, body {
       font-size: 16px;
    }
    .foot_item_keyword{
-      font-size: 32px;
+      font-size: 26px;
+      padding: 8px 12px;
    }
    .foot_item:nth-child(1){
       grid-row-start: 1;
