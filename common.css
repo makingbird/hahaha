@@ -498,7 +498,7 @@ html, body {
   
    .foot{
       grid-template-columns: 1fr 1fr;
-      grid-auto-rows: min-content;
+      /*grid-auto-rows: min-content;*/
       grid-template-rows: 1fr 1fr 1fr 1fr;
    }
    .foot_item_title{
@@ -528,7 +528,7 @@ html, body {
    .foot_item:nth-child(3) {
       grid-row-start: 1;
       grid-row-end: 3;
-      overflow: auto;
+      overflow: scroll;
       
    }
    .foot_item:nth-child(4) {
@@ -624,12 +624,18 @@ html, body {
    }
 }
 
+@media (min-width: 800px) {
+   .foot_item:nth-child(3) {
+      overflow-y: scroll;
+   }
+}
+
 @media (min-width: 1200px) {
    .foot{
       grid-template-columns: 360px 1fr 1fr;
    }
    .foot_item:nth-child(3) {
-      overflow: auto;
+      overflow-y: scroll;
    }
    
 }
