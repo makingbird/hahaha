@@ -35,6 +35,10 @@
             $('.thumbnail').css({
                 filter: 'grayscale(1)'
             });
+            $('.navi-right-menu,.trash_open').css({
+                display: 'none'
+            });
+            
         }
 
         function modalClose2() {
@@ -42,6 +46,9 @@
             $(modalPop).hide();
             $('.thumbnail').css({
                 filter: 'none'
+            });
+            $('.navi-right-menu,.trash_open').css({
+                display: 'block'
             });
         }
 
