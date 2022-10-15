@@ -12,7 +12,7 @@
             var modalPop3 = $('.foot_item_memo.on1,.foot_item_content.on1');
             $(modalPop3).show();
             $("#scrollonoff").scrollTop(0);
-            $('body, html, .foot_item_memo.on1,.foot_item_content.on1').scrollTop(0);
+            $("#scrollonoff2").scrollTop(0);
             $('.foot_item_keyword.on1').css({
                 fontWeight: 'bold'
             });
@@ -26,7 +26,8 @@
         function modalOpen10() {
             var modalPop2 = $('.foot_item_memo.on2,.foot_item_content.on2');
             $(modalPop2).show();
-            $('body, html, .foot_item_memo.on2,.foot_item_content.on2').scrollTop(0);
+            $("#scrollonoff").scrollTop(0);
+            $("#scrollonoff2").scrollTop(0);
             $('.foot_item_keyword.on2').css({
                 fontWeight: 'bold'
             });
@@ -66,7 +67,7 @@
                 </div>
             </div>
 
-            <div class="foot_item">
+            <div class="foot_item" id="scrollonoff">
                 <div class="foot_item_title">관찰</div>
                 <div class="foot_item_memo on1">
                    <img src="./imgs/poster/erik01.jpg" class="poster_img">
@@ -88,7 +89,7 @@
 
             </div>
 
-            <div class="foot_item" id="scrollonoff">
+            <div class="foot_item" id="scrollonoff2">
                 <div class="foot_item_title off">기록</div>
                 <div class="foot_item_content on1">
                     <div class="foot_item_wrapper">
