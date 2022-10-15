@@ -43,7 +43,7 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 
 @media (min-width: 768px) {
    .go.text{right:20px;}
-   .go_open,.navi-right-menu,.go_close{font-size: 24px;}
+   .go_open,.navi-right-menu,.go_close{font-size: 20px;}
    .navi-logo-wrapper{left:32px;}
    .navi-right-wrapper{right: 32px;}
 }
@@ -141,7 +141,6 @@ html, body {
    top: 0;
    right: 0;
    justify-content: center;
-   background-color: #fff;
    border-left: 1px solid #000;
 }
 
@@ -223,6 +222,9 @@ html, body {
    .img_title.end{
       border:0;
    }
+   .modal_go{
+      backdrop-filter: grayscale(1);
+   }
 }
 
 @media (min-width: 768px) {
@@ -231,6 +233,7 @@ html, body {
    }
    .modal_go{
       width: 420px;
+      background-color: #fff;
    }
    .modal_go_img {
       width: 380px;
@@ -259,6 +262,7 @@ html, body {
       font-size: 43px;
       transform: translate(20px, -70px);
    }
+   
 }
 
 
@@ -277,7 +281,7 @@ html, body {
    top: 0;
    left: 0;
    justify-content: center;
-   background-color: rgba(0, 0, 0, 0.877);
+   background-color: rgb(0 0 0 / 89%);
 }
 
 .trash_open{
@@ -327,7 +331,7 @@ html, body {
      width: 140px;
   }
   .trash_open{
-      font-size: 24px;
+      font-size: 20px;
    }
 }
 
