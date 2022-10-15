@@ -11,6 +11,7 @@
         function modalOpen9() {
             var modalPop3 = $('.foot_item_memo.on1,.foot_item_content.on1');
             $(modalPop3).show();
+            $("#scrollonoff").scrollTop(0);
             $('body, html, .foot_item_memo.on1,.foot_item_content.on1').scrollTop(0);
             $('.foot_item_keyword.on1').css({
                 fontWeight: 'bold'
@@ -87,7 +88,7 @@
 
             </div>
 
-            <div class="foot_item">
+            <div class="foot_item" id="scrollonoff">
                 <div class="foot_item_title off">기록</div>
                 <div class="foot_item_content on1">
                     <div class="foot_item_wrapper">
