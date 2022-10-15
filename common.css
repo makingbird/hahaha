@@ -29,6 +29,7 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 /* header */
 .navi{padding: 20px; position: absolute;}
 .navi-logo-wrapper,.navi-right-wrapper,.trash,.go{position: fixed;}
+.navi-right-wrapper{z-index: 1;}
 .navi-right-menu,.navi-logo-menu{padding: 8px;}
 
 
