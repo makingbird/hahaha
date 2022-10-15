@@ -143,6 +143,8 @@ html, body {
    right: 0;
    justify-content: center;
    border-left: 1px solid #000;
+   z-index: 2;
+   width: 100%;
 }
 
 .modal_go_img img{
@@ -167,10 +169,6 @@ html, body {
 
 .go_title{
    font-size: 24px;
-}
-
- .modal_go {
-   width: 100%;
 }
 
 .modal_go_wrapper{
