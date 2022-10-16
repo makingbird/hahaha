@@ -31,7 +31,7 @@ a {cursor: url(./imgs/Vector\ 1.png), url(myBall.cur), auto}
 .navi-logo-wrapper,.navi-right-wrapper,.trash,.go{position: fixed;}
 .navi-right-wrapper{z-index: 1;}
 .navi-right-menu,.navi-logo-menu{padding: 8px;}
-
+.trash{z-index: 1;}
 
 @media (min-width: 360px) {
    .go_open,.go_close,.navi-right-menu{font-size: 16px;}
@@ -279,7 +279,7 @@ html, body {
    left: 0;
    z-index: 1;
    justify-content: center;
-   background-color: rgb(0 0 0 / 89%);
+   background-color: rgb(0 0 0 / 80%);
 }
 
 .trash_open{
