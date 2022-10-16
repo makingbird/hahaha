@@ -194,6 +194,7 @@ html, body {
    position: relative;
 }
 
+
 .camera{
    position: absolute;
    text-shadow: 4px 2px 5px #fd1818db;
@@ -235,6 +236,9 @@ html, body {
    .modal_go_img {
       width: 380px;
       margin-bottom: 20px;
+   }
+   img.f:hover{
+      filter: grayscale(1);
    }
    .modal_go_wrapper{
       padding: 40px 15px;
