@@ -659,6 +659,7 @@ html, body {
 @media (min-width: 2000px) {
    .foot{
       grid-template-columns: 520px 1fr 1fr;
+      grid-template-rows: repeat(5, minmax(10px, auto));
    }
    .foot_item:nth-child(1){
       grid-row-start: 1;
