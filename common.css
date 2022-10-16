@@ -489,10 +489,10 @@ html, body {
    height: 100%;
 }
 .poster.on1{
-   background-image: url('./imgs/poster/erik.jpg');
+   background-image: url('./imgs/poster/RomanticDays.jpg');
 }
 .poster.on2{
-   background-image: url('./imgs/poster/RomanticDays.jpg');
+   background-image: url('./imgs/poster/erik.jpg');
 }
 .end{
    border:0;
