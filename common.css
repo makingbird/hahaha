@@ -223,6 +223,9 @@ html, body {
    .img_title.end{
       border:0;
    }
+   img.f:hover{
+      filter: grayscale(1);
+   }
 }
 
 @media (min-width: 768px) {
@@ -236,9 +239,6 @@ html, body {
    .modal_go_img {
       width: 380px;
       margin-bottom: 20px;
-   }
-   img.f:hover{
-      filter: grayscale(1);
    }
    .modal_go_wrapper{
       padding: 40px 15px;
