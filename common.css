@@ -125,7 +125,8 @@ html, body {
 }
 
 .modal_info_wrapper {
-   padding: 16px 8px;
+   padding: 16px 8px 15px;
+   line-height: 20px;
 }
 
 .go_close.text{
