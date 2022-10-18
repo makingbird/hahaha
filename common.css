@@ -298,7 +298,6 @@ html, body {
 }
 
 .trash_close{
-  color:#fff;
   text-align: right;
   padding: 11px;
 }
@@ -316,6 +315,9 @@ html, body {
    }
    .modal_trash {
       background-color: rgb(0 0 0 / 80%);
+   }
+   .trash_close{
+      color:#fff;
    }
 }
 
@@ -341,6 +343,9 @@ html, body {
   }
   .trash_open{
       font-size: 20px;
+   }
+   .trash_close{
+      color:#000;
    }
 }
 
